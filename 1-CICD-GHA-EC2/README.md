@@ -21,6 +21,8 @@ I made pr from dev to prod
 
 then I Merged PR
 
+https://github.com/am-devops09/Devops-Projects/blob/dev/1-CICD-GHA-EC2/project-1.png
+
 
 
 # Adding Asg 

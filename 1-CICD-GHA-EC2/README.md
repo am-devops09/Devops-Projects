@@ -1,7 +1,7 @@
 # Devops-Projects
 
 
-1- 1-CICD-GHA-EC2
+# 1- 1-CICD-GHA-EC2
 
 In this Project , we created an ec2 instance with default vpc
 i added a sg to the infra
@@ -11,5 +11,9 @@ as an output i get the ip address of the instance(with terraform i wanna use thi
 
 2 / then i created cicd pipeline to build push and deploy container into the ec2 instance 
 
+# Multi Env Dev and Prod
+now i will create and dev Env and then make Pull request to main branch for approuval or not.
+
+# Adding Asg 
 next step we gonna use an asg with loadbalancer and autoscaling group
 

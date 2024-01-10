@@ -31,7 +31,7 @@ jobs:
       - name: Deploy docker image to EC2
         env:
           REGISTRY: ${{ steps.login-ecr.outputs.registry }}
-          REPOSITORY: aws-deploy
+          REPOSITORY: mv
           IMAGE_TAG: ${{ github.sha }}
           AWS_DEFAULT_REGION: us-east-1
         uses: appleboy/ssh-action@master

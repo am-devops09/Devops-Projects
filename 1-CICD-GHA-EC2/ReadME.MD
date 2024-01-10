@@ -27,6 +27,7 @@ jobs:
           REPOSITORY: aws-deploy
           IMAGE_TAG: ${{ github.sha }}
         run: |-
+          cd 1-CICD-GHA-EC2
           docker build -t $REGISTRY/$REPOSITORY:$IMAGE_TAG .
           docker push $REGISTRY/$REPOSITORY:$IMAGE_TAG
       - name: Deploy docker image to EC2

@@ -1,7 +1,10 @@
 # Devops-Projects
 
-
-# 1- 1-CICD-GHA-EC2
+## 1 - 1 creating the ec2 manually with terraform
+terraform init
+terraform plan
+terraform apply --auto-approve
+# 1-2 Pipeline
 
 In this Project , we created an ec2 instance with default vpc
 i added a sg to the infra

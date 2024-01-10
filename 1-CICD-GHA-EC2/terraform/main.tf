@@ -7,6 +7,12 @@ resource "aws_instance" "Ubuntu-ec2" {
     Name = "Ubuntu-EC2"
     Environment = "Dev"
   }
+  user_data = file("install.sh")
+  root_block_device {
+    volume_size = 20
+    volume_type = "gp2"
+    encrypted   = false
+  }
 }
 resource "aws_security_group" "UbuntuSG" {
     ingress {

@@ -15,7 +15,7 @@ provider "aws" {
 # Create remote state
 terraform {
   backend "s3" {
-    bucket = "cicd-devops-mvone"
+    bucket = "terraformtsftates-mvone"
     region = "us-east-1"
     key    = "infra.tfstate"
   }
